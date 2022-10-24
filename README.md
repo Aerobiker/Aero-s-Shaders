@@ -3,7 +3,7 @@ A repository of my own shaders for unity (optimized for VRC)
 
 ## Shaders
 
-> :Warning: Some may have problems displaying in vr (since unity now uses a stereo camera)
+> ⚠ Some may have problems displaying in vr (since unity now uses a stereo camera)
 
 - 7 Color Gradient
   + Creates a gradient in the x axis of the UV's, you can choose how many colors to consider for the gradient (the mixing is a bit wonkey)
