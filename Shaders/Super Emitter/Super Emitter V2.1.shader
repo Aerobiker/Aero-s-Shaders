@@ -1,4 +1,4 @@
-﻿Shader "AeroFunky/Super Emitter V2.1"
+Shader "AeroFunky/Super Emitter V2.1"
 {
     Properties
     {
@@ -94,7 +94,8 @@
 				objectUV.x *= aspect;
 
 				#if defined(USING_STEREO_MATRICES)
-				objectUV.x *= 2;
+					objectUV.x *= 2;
+					objectUV *= 2;
 				#endif
 
 
