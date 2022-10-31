@@ -19,6 +19,8 @@ A repository of my own shaders for unity (optimized for VRC)
 - Space Distortion
   + Using the same technique than the Super Emitter, you can distort space in the volume of an object, and make a black hole like effect, with distortion through time.
 
+## Tricks
+- If you set in the appData 'pos : POSITION' and in the v2f struct 'pos : SV_POSITION' then in the v2f function you declare 'o.pos = v.pos' then you have a crappy popup (witch doesn't work in vr from what i could see)
 
 ## Nice References
 - cnlohr's useful shader trix : https://github.com/cnlohr/shadertrixx
