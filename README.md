@@ -18,6 +18,8 @@ A repository of my own shaders for unity (optimized for VRC)
   + Displays a image as if it was placed in the origin of the object or with an offset, (it renders in the volume of the object and can clip with its borders). The image always looks at the viewer. 
 - Space Distortion
   + Using the same technique than the Super Emitter, you can distort space in the volume of an object, and make a black hole like effect, with distortion through time.
+- Simple Zoom (Not THAT simple)
+  + Allows you to zoom onto things, with blending options and shading options to make the most uniques of glasses or magic objects.
 
 ## Tricks
 - If you set in the appData 'pos : POSITION' and in the v2f struct 'pos : SV_POSITION' then in the v2f function you declare 'o.pos = v.pos' then you have a crappy popup (witch doesn't work in vr from what i could see)
@@ -27,4 +29,5 @@ A repository of my own shaders for unity (optimized for VRC)
 - Microsoft Performance Recomendations : https://learn.microsoft.com/en-us/windows/mixed-reality/develop/unity/performance-recommendations-for-unity
 - Unity reference to the vr problem : https://docs.unity.cn/550/Documentation/Manual/SinglePassStereoRendering.html
 - Fun videos on more in depth shader related topics by Acerola: https://www.youtube.com/c/Acerola_t/videos
+    + And his repo : https://github.com/GarrettGunnell
 - Impressively well implemented shader concepts by SimonDev (has courses and repo) : https://www.youtube.com/channel/UCEwhtpXrg5MmwlH04ANpL8A
