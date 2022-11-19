@@ -39,14 +39,14 @@
 		Tags
 			{
 				"Queue" = "Transparent"
-				"DisableBatching" = "True"
+				"RenderType" = "Transparent"
 			}
 		LOD 100
 
 		// Grab the screen behind the object into _BackgroundTexture (will batch the screen texture, for other objects using the same name) -> efficient
 		GrabPass
 		{
-			"_BackgroundTexture"
+			"_GrabTexture_Transparent"
 		}
 
 		// Render the object with the texture generated above, and invert the colors
@@ -63,7 +63,7 @@
 			// ====================== VARIABLES ======================
 
 			fixed _LensDistortionMode;
-			sampler2D _BackgroundTexture;
+			sampler2D _GrabTexture_Transparent;
 
 			fixed _ToggleDistortionFresnelObserve;
 			float _DistortionFresnelThreshold;
@@ -165,12 +165,12 @@
 					float2 green_uv = cordUV + _ChromaticAberation*float2(_ChromaticShiftX[1], _ChromaticShiftY[1])*0.1 / fresnelAbberation;
 					float2 blue_uv = cordUV + _ChromaticAberation*float2(_ChromaticShiftX[2], _ChromaticShiftY[2])*0.1/ fresnelAbberation;
 
-					col.r = tex2D(_BackgroundTexture, red_uv).r;
-					col.g = tex2D(_BackgroundTexture, green_uv).g;
-					col.b = tex2D(_BackgroundTexture, blue_uv).b;
+					col.r = tex2D(_GrabTexture_Transparent, red_uv).r;
+					col.g = tex2D(_GrabTexture_Transparent, green_uv).g;
+					col.b = tex2D(_GrabTexture_Transparent, blue_uv).b;
 				}
 				else {
-					col = tex2D(_BackgroundTexture, cordUV); // (simply show the magnification
+					col = tex2D(_GrabTexture_Transparent, cordUV); // (simply show the magnification
 				}
 
 				col += i.distortionFresnelUV*_ToggleDistortionFresnelObserve; // make a preview, so its easier to set the right parameters for the distortion
