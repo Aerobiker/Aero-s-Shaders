@@ -77,14 +77,14 @@ Shader "AeroFunky/Simple Zoom V1.3"
 			Tags
 				{
 					"Queue" = "Transparent"
-					"DisableBatching" = "True"
+					"RenderType" = "Transparent"
 				}
 			LOD 100
 
 			// Grab the screen behind the object into _BackgroundTexture (will batch the screen texture, for other objects using the same name) -> efficient
 			GrabPass
 			{
-				"_BackgroundTexture"
+				"_GrabTexture_Transparent"
 			}
 
 			// Render the object with the texture generated above, and invert the colors
@@ -101,7 +101,7 @@ Shader "AeroFunky/Simple Zoom V1.3"
 
 			// ====================== VARIABLES ======================
 
-				sampler2D	_BackgroundTexture;
+				sampler2D	_GrabTexture_Transparent;
 
 				float	_ZoomFactor;
 
@@ -244,7 +244,7 @@ Shader "AeroFunky/Simple Zoom V1.3"
 					// -------------------------------------
 
 					float4 coords = UNITY_PROJ_COORD(i.grabPos);
-					float4 col = tex2D(_BackgroundTexture, coords.xy / coords.w);
+					float4 col = tex2D(_GrabTexture_Transparent, coords.xy / coords.w);
 					half colIntensity = dot(col.rgb, RGBToIntensity);
 
 					#if defined(USING_STEREO_MATRICES)
