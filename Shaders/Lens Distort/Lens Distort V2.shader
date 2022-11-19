@@ -40,6 +40,7 @@
 			{
 				"Queue" = "Transparent"
 				"RenderType" = "Transparent"
+				"DisableBatching" = "True"
 			}
 		LOD 100
 
