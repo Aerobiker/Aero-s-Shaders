@@ -48,7 +48,7 @@
    - `Key 1 -> 20`       -> User assingeable encryption/decrytpion keys (they must match), they must be between -2<sup>32</sup> and 2<sup>32</sup>.
 
 ### Editor Images
-Encryption Shader Editor   |  Dencryption Shader Editor
+Encryption Shader Editor   |  Decryption Shader Editor
 :----------------------------------------------------:|:-----------------------------------------------------:
 ![Encryption Editor](Images/Encryption%20Editor.PNG)  |  ![Decryption Editor](Images/Decryption%20Editor.PNG)
 
