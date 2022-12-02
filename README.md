@@ -4,7 +4,7 @@ A repository of my own shaders for unity (optimized for VRC)
 > **Warning**
 > This README is a bit old, please wait for the rework of this page in the weeks (2/12/22)
 
-> **Notice**
+> **Note**
 > New shader : Pseudo Encryption, please go read the folder (it has a README).
 
 
