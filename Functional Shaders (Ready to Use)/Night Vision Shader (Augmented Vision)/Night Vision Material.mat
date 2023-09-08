@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Visor Mat
+  m_Shader: {fileID: 4800000, guid: cef339bd22015e644b84c891f33d0098, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _GradientTex:
+        m_Texture: {fileID: 2800000, guid: dc9026c44f276cb4cb77f70ada120211, type: 3}
+        m_Scale: {x: 0, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OverlayTex:
+        m_Texture: {fileID: 2800000, guid: 5757e282ae2aac54e99d40378b103e7c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _BlendOp: 0
+    - _ColorMask: 15
+    - _Color_Palette: 1
+    - _CullMode: 2
+    - _DstBlend: 10
+    - _Effect_Equation: 3
+    - _Gradient_factor_1: 0.194
+    - _Gradient_factor_2: 1
+    - _OverlayAlphaOveride: 1
+    - _OverlayColorMix: 5
+    - _OverlayMode: 2
+    - _OverlayToggle: 0
+    - _PostChromaticAbberationRange: 0
+    - _PostChromaticAbberationToggle: 0
+    - _SrcBlend: 5
+    - _ZTestMode: 4
+    - _ZWriteMode: 1
+    - _ZoomFactor: 0
+    - _ZoomMode: 0
+    - _ZoomOverlay: 0
+    - alpha: 0
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _OverlayColor: {r: 0.49411765, g: 1.6235294, b: 1.7803922, a: 1}
+    - _PostChromaticAbberationVector: {r: 0, g: 0, b: 0, a: 0}
