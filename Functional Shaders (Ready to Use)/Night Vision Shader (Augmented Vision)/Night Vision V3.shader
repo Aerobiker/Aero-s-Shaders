@@ -1,4 +1,4 @@
-﻿Shader "Hidden/Night Vision V3"
+﻿Shader "AeroFunky/Night Vision V3"
 {
     Properties
     {
